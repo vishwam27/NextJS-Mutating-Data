@@ -39,7 +39,10 @@ export async function createPost(prevState, formData){
     });
 
 
+    revalidatePath('/' , 'layout');
     redirect('/feed');
+
+
 
 }
 
